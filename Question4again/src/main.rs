@@ -32,11 +32,14 @@ impl<T: Ord> Tree<T> {
 
 fn main() {
     let mut tree: Tree<i32> = Tree::Empty;
-    tree.insert_node(4);
+    tree.insert_node(5);
+    tree.insert_node(3);
     tree.insert_node(2);
+    tree.insert_node(4);
+    tree.insert_node(7);
     tree.insert_node(6);
-    tree.insert_node(9);
-    println!("{:?}", tree);
+    tree.insert_node(8);
+    println!("{:#?}", tree);
 }
 
 // Options are essentially enums with variants Some and None. Empty behaves much like the none in options. That's why this code does not
