@@ -1,6 +1,8 @@
 # ECE 421 Lab 2
+This is my submission for lab 2. The answers to the written questions are contained below, and also in the code files.
 ## Question 1
 Go to question 1 directory
+
 ```cargo run```
 ## Question 2
 Go to question 2 directory
@@ -11,13 +13,15 @@ Rust requires knowing the size of all types at compile time, because unlike most
 When struct contain borrowed references, lifetimes need to be explicitly specified. Other languages don't need this because they use garbage collection or manual memory management. The lifetime specifier tells the compiler that data needs to live aslong as TreeNode.
 ## Question 3
 Go to question 3 directory
+
 ```cargo run```
 
 ## Question 4
 Go to question 4 directory
+
 ```cargo run```
 
 Options are essentially enums with variants Some and None. Empty behaves much like the none in options. That's why this code does not
 options like in question 3.
 
-The struct based approach is probably better as it's use has clearer intentions, and is more memory efficient. Enums came with overhead due to being more flexible with the types of data they can use. For this same reason, it's harder to read code that use enum data type abstractions.
+The struct based approach is probably better as it's use has clearer intentions, and is more memory efficient. Enums came with overhead due to being more flexible with the types of data they can use. For this same reason, it's harder to read code that use enum data type abstractions. However there advantages to the enum variation inherent to the way it was coded (not inherent to being an enum). The code in question 4 allowed for different datatypes besides strings. However, this could have easily been done with structs by using generics in question 3.
